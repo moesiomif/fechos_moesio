@@ -3,7 +3,10 @@ def calcula_bin(etapa, matriz):
     linhas_preenchidas = []
     rel_bin = []
     nova_matriz = matriz
-
+'''
+Tem que ser definido se o tipo de fecho é para grafo ou digrafo, pois
+caso seja digafo há um erro.
+'''
     for valor_linha in range(len(matriz[etapa])):
         if matriz[etapa][valor_linha] == 1:
             linhas_preenchidas.append(valor_linha)
